@@ -9,7 +9,7 @@ get_header(); ?>
 
 <?php endwhile; ?>
 
-<?php else; ?> No team.
+<?php else: ?> No team.
 
 <?php wp_reset_query(); ?>
 
