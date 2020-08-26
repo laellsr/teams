@@ -1,19 +1,27 @@
 <?php
 get_header(); ?>
 
-<?php query_posts('post_type=Teams'); ?>
-      
-<?php if(have_posts()): while(have_posts()): the_post(); ?>
+<div class="standing">
+    <div class="container">
+        <div class="standing-list-cover">
 
-    <?php the_title(); ?>
+            <?php query_posts('post_type=Teams'); ?>
+                  
+            <?php if(have_posts()): while(have_posts()): the_post(); ?>
 
-<?php endwhile; ?>
+                <?php the_title(); ?>
 
-<?php else: ?> No team.
+            <?php endwhile; ?>
 
-<?php wp_reset_query(); ?>
+            <?php else: ?> No team.
 
-<?php endif; ?>
+            <?php wp_reset_query(); ?>
+
+            <?php endif; ?>
+
+        </div>
+    </div>
+</div>
 
 <?php
 get_footer(); ?>
