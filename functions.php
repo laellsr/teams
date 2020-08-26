@@ -93,7 +93,7 @@ function posts_types(){
             'public'        =>  true,
             'has_archive'   =>  true,
             'menu_icon'     => 'dashicons-welcome-learn-more',
-            'supports'      =>  array('title', 'editor', 'thumbnail', 'page-attributes'),
+            'supports'      =>  array('title', 'thumbnail', 'page-attributes'/*, 'editor',  */),
             )
         );
 }
