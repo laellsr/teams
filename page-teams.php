@@ -11,9 +11,11 @@ get_header(); ?>
                     <?php if(have_posts()):
 
                         while(have_posts()): the_post(); ?>
-
-                        <h4 class="result-title"><?php the_title(); ?></h4>
-                        <div class="mt-1 mb-2"><?php the_field('descricao'); ?> </div>
+                            <div class="col-8 mt-3">
+                                <h4 class="result-title"><?php the_title(); ?></h4>
+                                <div class="mt-1 mb-2"><?php the_field('descricao'); ?> </div>
+                            </div>
+                            <?php the_field('ranked_points'); ?>
 
                     <?php endwhile; ?>
 
