@@ -81,4 +81,25 @@ function load_scripts() {
 
 add_action( 'wp_enqueue_scripts' , 'load_scripts' );
 
+
+// post types
+
+function posts_types(){
+    register_post_type('teams',
+        array(
+            'labels'        =>  array(
+                'name'          =>  __('Teams'),
+                'singular_name' =>  __('Team')),
+            'public'        =>  true,
+            'has_archive'   =>  true,
+            'menu_icon'     =>  
+            'supports'      =>  array('title', 'editor', 'thumbnail', 'page-attributes'),
+            )
+        )
+    );
+}
+
+add_action('init','posts_types');
+
 ?>
+
