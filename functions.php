@@ -92,6 +92,7 @@ function posts_types(){
                 'singular_name' =>  __('Team')),
             'public'        =>  true,
             'has_archive'   =>  true,
+            'menu_icon'     => 'dashicons-welcome-learn-more',
             'supports'      =>  array('title', 'editor', 'thumbnail', 'page-attributes'),
             )
         );
