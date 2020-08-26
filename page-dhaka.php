@@ -36,7 +36,7 @@
                             </div>
                             <div class="col-8 mt-3">
                                 <h4 class="result-title">Dhaka Platoon</h4>
-                                <div class="mt-1 mb-2">From NY, is the best team this season<br>with three consecutive victories.</div>
+                                <div class="mt-1 mb-2">From NY, is the second best team this season<br>with three consecutive victories.</div>
                                 <dt class="d-inline">POINTS</dt>:<span class="diff"> +30</span>
                             </div>
                         </div>
