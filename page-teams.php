@@ -3,7 +3,7 @@ get_header(); ?>
 
 <div class="standing">
     <div class="row ml-5 mr-5">
-        <?php query_posts('post_type=Teams&post_per_page=-1'); $counter=0; ?>
+        <?php query_posts('post_type=Teams&post_per_page=-1'); ?>
               
         <?php if(have_posts()):
 
