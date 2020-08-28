@@ -25,6 +25,7 @@
         </div>
         <!-- breadcrumb end -->
 
+
         <!-- standing begin -->
         <div class="standing">
             <div class="container">
@@ -36,137 +37,45 @@
                                 <tr>
                                     <th scope="col">Pos</th>
                                     <th scope="col">Team</th>
-                                    <th scope="col">w</th>
-                                    <th scope="col">l</th>
-                                    <th scope="col">t</th>
-                                    <th scope="col">pts</th>
-                                    <th scope="col">diff</th>
-                                    <th scope="col"></th>
+                                    <th scope="col">Ranked Points</th>
+
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr>
-                                    <th scope="row">1</th>
-                                    <td>
-                                        <span class="single-team">
-                                            <span class="logo">
-                                                <img src="<?php bloginfo('template_url'); ?>/assets/img/team-1.png" alt="">
+
+                                <?php  query_posts('post_type=Teams&meta_key=ranked_points&orderby=meta_value&order=DESC&post_per_page=-1'); $counter=1; ?>
+                                      
+                                <?php if(have_posts()):
+
+                                    while(have_posts()): the_post(); ?>
+                             
+                                   <tr>
+                                        <th scope="row"><?php echo $counter++; ?></th>
+                                        <td>
+                                            <span class="single-team">
+                                                <span class="logo">
+                                                    <img src="<?php the_field('imagem'); ?>" alt="">
+                                                </span>
+                                                <span class="text">
+                                                    <?php the_title(); ?>
+                                                </span>
                                             </span>
-                                            <span class="text">
-                                                Khulna Tigers
-                                            </span>
-                                        </span>
-                                    </td>
-                                    <td>4</td>
-                                    <td>0</td>
-                                    <td>0</td>
-                                    <td>40</td>
-                                    <td><span class="diff">+40</span></td>
-                                    <td>
-                                        <button>
-                                            <i class="fas fa-ellipsis-v"></i>
-                                        </button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">2</th>
-                                    <td>
-                                        <span class="single-team">
-                                            <span class="logo">
-                                                <img src="<?php bloginfo('template_url'); ?>/assets/img/team-2.png" alt="">
-                                            </span>
-                                            <span class="text">
-                                                Dhaka Platoon
-                                            </span>
-                                        </span>
-                                    </td>
-                                    <td>3</td>
-                                    <td>1</td>
-                                    <td>0</td>
-                                    <td>25</td>
-                                    <td><span class="diff">+30</span></td>
-                                    <td>
-                                        <button>
-                                            <i class="fas fa-ellipsis-v"></i>
-                                        </button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">3</th>
-                                    <td>
-                                        <span class="single-team">
-                                            <span class="logo">
-                                                <img src="<?php bloginfo('template_url'); ?>/assets/img/team-3.png" alt="">
-                                            </span>
-                                            <span class="text">
-                                               Sylhet Thunder
-                                            </span>
-                                        </span>
-                                    </td>
-                                    <td>1</td>
-                                    <td>2</td>
-                                    <td>1</td>
-                                    <td>0</td>
-                                    <td><span class="diff">+10</span></td>
-                                    <td>
-                                        <button>
-                                            <i class="fas fa-ellipsis-v"></i>
-                                        </button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">4</th>
-                                    <td>
-                                        <span class="single-team">
-                                            <span class="logo">
-                                                <img src="<?php bloginfo('template_url'); ?>/assets/img/team-4.png" alt="">
-                                            </span>
-                                            <span class="text">
-                                                Rajshahi Royals
-                                            </span>
-                                        </span>
-                                    </td>
-                                    <td>0</td>
-                                    <td>2</td>
-                                    <td>2</td>
-                                    <td>-20</td>
-                                    <td><span class="diff">+0</span></td>
-                                    <td>
-                                        <button>
-                                            <i class="fas fa-ellipsis-v"></i>
-                                        </button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">5</th>
-                                    <td>
-                                        <span class="single-team">
-                                            <span class="logo">
-                                                <img src="<?php bloginfo('template_url'); ?>/assets/img/team-5.png" alt="">
-                                            </span>
-                                            <span class="text">
-                                               Rangpur Sixers
-                                            </span>
-                                        </span>
-                                    </td>
-                                    <td>0</td>
-                                    <td>2</td>
-                                    <td>2</td>
-                                    <td>-20</td>
-                                    <td><span class="diff">+0</span></td>
-                                    <td>
-                                        <button>
-                                            <i class="fas fa-ellipsis-v"></i>
-                                        </button>
-                                    </td>
-                                </tr>
+                                        </td>
+                                        <td><?php the_field('ranked_points'); ?></td>
+                                    </tr>
+                                    
+                                <?php endwhile; ?>
+
+                                <?php else: ?> No team.
+
+                                <?php wp_reset_query(); ?>
+
+                                <?php endif; ?>
+
                             </tbody>
                         </table>
                     </div>
                 </div>
-                <span class="text-special">
-                    <b>Glossary Terms:</b>  <b class="color-sec">W</b> = Wins, <b class="color-sec">T</b> = Ties, <b class="color-sec">Diff</b> = Point differental, <b class="color-sec">L</b> = Loses, <b class="color-sec">PTS</b> = Winning Percentage  
-                </span>
             </div>
         </div>
         <!-- standing end -->
