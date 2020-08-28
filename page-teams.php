@@ -42,7 +42,7 @@ get_header(); ?>
                         <div class="standing-team-list">
                             <div class="mb-3">
                                 <div class="">
-                                    <span class="logo"><a target="_blank" href="<?php the_field('imagem'); ?>"><img class="" src="<?php the_field('imagem'); ?>" style="width: 20px; height: 50%"></a></span>
+                                    <span class="logo"><a target="_blank" href="<?php the_field('imagem'); ?>"><img class="" src="<?php the_field('imagem'); ?>" style="width: 110px; height: 50%"></a></span>
                                 </div>
                                 <div class="mt-4">
                                     <h4 class="result-title"><?php the_title(); ?></h4>
