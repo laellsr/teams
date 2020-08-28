@@ -31,7 +31,7 @@ get_header(); ?>
     <div class="row ml-5 mr-5">
         <?php 
             $args = array(
-                'orderby' => array( 'title' => 'DESC', 'menu_order' => 'ASC' )
+                'orderby' => array( 'title' => 'ASC', 'menu_order' => 'ASC' )
             );
          ?>
 
