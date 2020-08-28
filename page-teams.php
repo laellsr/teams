@@ -29,13 +29,8 @@ get_header(); ?>
 </style>
 <div class="standing">
     <div class="row ml-5 mr-5">
-        <?php 
-            $args = array(
-                'orderby' => array( 'title' => 'ASC', 'menu_order' => 'ASC' )
-            );
-         ?>
 
-        <?php  query_posts('post_type=Teams&post_per_page=-1', $args); ?>
+        <?php  query_posts('post_type=Teams&order=ASC&post_per_page=-1'); ?>
               
         <?php if(have_posts()):
 
