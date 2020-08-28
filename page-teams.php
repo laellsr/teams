@@ -2,8 +2,8 @@
 get_header(); ?>
 
 <div class="standing">
-    <div class="container">
-        <?php query_posts('post_type=Teams&post_per_page=-1'); ?>
+    <div class="row ml-5 mr-5">
+        <?php query_posts('post_type=Teams&post_per_page=-1'); $counter=0; ?>
               
         <?php if(have_posts()):
 
@@ -12,9 +12,9 @@ get_header(); ?>
                         <div class="standing-team-list">
                             <div class="row mb-3">
                                 <div class="col-3">
-                                    <span class="logo"><a target="_blank" href="<?php the_field('imagem'); ?>"><img class="mb-4" src="<?php the_field('imagem'); ?>" style="width: 35%"></a></span>
+                                    <span class="logo"><a target="_blank" href="<?php the_field('imagem'); ?>"><img class="" src="<?php the_field('imagem'); ?>" style="width: 100%"></a></span>
                                 </div>
-                                <div class="col-9">
+                                <div class="col-9 mt-2">
                                     <h4 class="result-title"><?php the_title(); ?></h4>
                                     <div class="mt-1 mb-2"><?php the_field('descricao'); ?> </div>
                                     <dt class="d-inline">Ranked Points</dt>: <span class="diff"><?php the_field('ranked_points'); ?></span>
