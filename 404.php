@@ -10,10 +10,10 @@
                             <h2>Error 404</h2>
                             <ul>
                                 <li>
-                                    <a href="#">Home</a>
+                                    Home
                                 </li>
                                 <li>
-                                    <a href="#">Pages</a>
+                                    Pages
                                 </li>
                                 <li>
                                     Error 404
