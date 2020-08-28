@@ -16,9 +16,9 @@ get_header(); ?>
                                 <h4 class="result-title"><?php the_title(); ?></h4>
                                 <div class="mt-1 mb-2"><?php the_field('descricao'); ?> </div>
                                 <dt class="d-inline">Ranked Points</dt>: <span class="diff"><?php the_field('ranked_points'); ?></span>
-                                <span class="logo"><?php the_field('imagem'); ?></span>
+                                <span class="logo"><img src="<?php the_field('imagem'); ?>"></span>
                             </div>
-                              
+
             </div>
         </div>
     </div>
