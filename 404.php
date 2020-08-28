@@ -36,7 +36,6 @@
                         </div>
                         <div class="part-text">
                             <h4>Sorry, This page was not found!</h4>
-                            <a href="" class="back-to-home-btn">Back to home</a>
                         </div>
                     </div>
                 </div>
