@@ -2,7 +2,7 @@
 get_header(); ?>
 
 <!-- breadcrumb begin -->
-<div class="breadcrumb-bettix standing-page" style="background-image: url(assets/img/banner-2.jpg);">
+<div class="breadcrumb-bettix standing-page" style="background-image: url(<?php bloginfo('template_url'); ?>/assets/img/banner-2.jpg);">
     <div class="container">
         <div class="row">
             <div class="col-xl-7 col-lg-7">
@@ -23,7 +23,7 @@ get_header(); ?>
 </div>
 <!-- breadcrumb end -->
 <style>
-    .h4.result-title{
+    .result-title{
       padding-left: 0px;
     }
 </style>
