@@ -1,6 +1,32 @@
 <?php
 get_header(); ?>
 
+<!-- breadcrumb begin -->
+<div class="breadcrumb-bettix standing-page" style="background-image: url(assets/img/banner-2.jpg);">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-7 col-lg-7">
+                <div class="breadcrumb-content">
+                    <h2>Teams</h2>
+                    <ul>
+                        <li>
+                            Home
+                        </li>
+                        <li>
+                            Teams
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- breadcrumb end -->
+<style>
+    .h4.result-title{
+      padding-left: 0px;
+    }
+</style>
 <div class="standing">
     <div class="row ml-5 mr-5">
         <?php query_posts('post_type=Teams&post_per_page=-1'); ?>
