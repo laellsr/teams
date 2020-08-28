@@ -2,35 +2,34 @@
 get_header(); ?>
 
 <div class="standing">
+    <div class="container">
+        <?php query_posts('post_type=Teams&post_per_page=-1'); ?>
+              
+        <?php if(have_posts()):
 
-    <?php query_posts('post_type=Teams&post_per_page=-1'); ?>
-          
-    <?php if(have_posts()):
-
-        while(have_posts()): the_post(); ?>
-            <div class="container">
-                <div class="standing-list-cover col-3">
-                    <div class="standing-team-list">
-                        <div class="mb-3">
-                            <span class="logo"><a target="_blank" href="<?php the_field('imagem'); ?>"><img style="width: 10%" class="mb-4" src="<?php the_field('imagem'); ?>"></a></span>
-                            <h4 class="result-title"><?php the_title(); ?></h4>
-                            <div class="mt-1 mb-2"><?php the_field('descricao'); ?> </div>
-                            <dt class="d-inline">Ranked Points</dt>: <span class="diff"><?php the_field('ranked_points'); ?></span>
-                            
+            while(have_posts()): the_post(); ?>
+                    <div class="standing-list-cover col-3">
+                        <div class="standing-team-list">
+                            <div class="mb-3">
+                                <span class="logo"><a target="_blank" href="<?php the_field('imagem'); ?>"><img class="mb-4" src="<?php the_field('imagem'); ?>" style="width: 60%"></a></span>
+                                <h4 class="result-title"><?php the_title(); ?></h4>
+                                <div class="mt-1 mb-2"><?php the_field('descricao'); ?> </div>
+                                <dt class="d-inline">Ranked Points</dt>: <span class="diff"><?php the_field('ranked_points'); ?></span>
+                                
+                            </div>
                         </div>
                     </div>
-                </div>
-            </div>
 
-    <?php endwhile; ?>
+        <?php endwhile; ?>
 
-    <?php else: ?> No team.
+        <?php else: ?> No team.
 
-    <?php wp_reset_query(); ?>
+        <?php wp_reset_query(); ?>
 
-    <?php endif; ?>
+        <?php endif; ?>
 
 
+    </div>
 </div>
 
 <?php
