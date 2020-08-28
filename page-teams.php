@@ -30,7 +30,7 @@ get_header(); ?>
         width: 0px;
     }
 </style>
-<div class="standing">
+<div class="standing text-center">
     <div class="row ml-5 mr-5">
 
         <?php  query_posts('post_type=Teams&order=ASC&post_per_page=-1'); ?>
@@ -38,13 +38,13 @@ get_header(); ?>
         <?php if(have_posts()):
 
             while(have_posts()): the_post(); ?>
-                    <div class="standing-list-cover col-6">
+                    <div class="standing-list-cover col-3">
                         <div class="standing-team-list">
                             <div class="mb-3">
                                 <div class="">
-                                    <span class="logo"><a target="_blank" href="<?php the_field('imagem'); ?>"><img class="" src="<?php the_field('imagem'); ?>" style=""></a></span>
+                                    <span class="logo"><a target="_blank" href="<?php the_field('imagem'); ?>"><img class="" src="<?php the_field('imagem'); ?>" style="width: 20px; height: 50%"></a></span>
                                 </div>
-                                <div class="mt-2">
+                                <div class="mt-4">
                                     <h4 class="result-title"><?php the_title(); ?></h4>
                                     <!--<div class="mt-1 mb-2"><?php // the_field('descricao'); ?> </div>-->
                                     <dt class="d-inline">Ranked Points</dt>: <span class="diff"><?php the_field('ranked_points'); ?></span>
