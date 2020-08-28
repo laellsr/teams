@@ -24,7 +24,10 @@ get_header(); ?>
 <!-- breadcrumb end -->
 <style>
     .standing .standing-team-list .result-title{
-      padding-left: 0px;
+        padding-left: 0px;
+    }
+    .standing .standing-team-list .result-title:after{
+        width: 0px;
     }
 </style>
 <div class="standing">
