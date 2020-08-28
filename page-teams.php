@@ -23,7 +23,7 @@ get_header(); ?>
 </div>
 <!-- breadcrumb end -->
 <style>
-    .result-title{
+    .standing .standing-team-list .result-title{
       padding-left: 0px;
     }
 </style>
@@ -39,7 +39,7 @@ get_header(); ?>
                         <div class="standing-team-list">
                             <div class="row mb-3">
                                 <div class="col-3">
-                                    <span class="logo"><a target="_blank" href="<?php the_field('imagem'); ?>"><img class="" src="<?php the_field('imagem'); ?>" style="width: 100px"></a></span>
+                                    <span class="logo"><a target="_blank" href="<?php the_field('imagem'); ?>"><img class="" src="<?php the_field('imagem'); ?>" style=""></a></span>
                                 </div>
                                 <div class="col-9 mt-2">
                                     <h4 class="result-title"><?php the_title(); ?></h4>
