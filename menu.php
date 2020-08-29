@@ -6,9 +6,6 @@
 				/* Para ser mais rapido, preferi não utilizar esta função
 				pois a saida vem formatada e tentei utilizar argumentos
 				e outras funções e não deu certo, preciso averiguar melhor */
-				$menu = wp_get_nav_menu_object( $menu );
-				$items = get_objects_in_term( $menu->term_id, 'nav-menu' );
-				echo $items;
 
 				$current_menu = 'nav-menu';
 				$array_menu = wp_get_nav_menu_items($current_menu);
