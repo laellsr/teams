@@ -6,19 +6,6 @@
 				/* Para ser mais rapido, preferi não utilizar esta função
 				pois a saida vem formatada e tentei utilizar argumentos
 				e outras funções e não deu certo, preciso averiguar melhor */
-
-				$current_menu = 'nav-menu';
-				$array_menu = wp_get_nav_menu_items($current_menu);
-    $menu = array();
-    foreach ($array_menu as $m) {
-        if (empty($m->menu_item_parent)) {
-            $menu[$m->ID] = array();
-            $menu[$m->ID]['ID']      =   $m->ID;
-            $menu[$m->ID]['title']       =   $m->title;
-            $menu[$m->ID]['url']         =   $m->url;
-            echo $menu[$m->ID]['url'];
-        }
-    }
 				?>
 
             <li class="nav-item">
