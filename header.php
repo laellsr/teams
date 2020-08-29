@@ -16,7 +16,7 @@
 
 <div>
     <?php 
-$menu_items = wp_get_nav_menu_items( $options['menu_choice'] );
+$menu_items = wp_get_nav_menu_items( $options['nav-menu'] );
 foreach ( (array) $menu_items as $key => $menu_item ) {
     $title = $menu_item->title;
     $url = $menu_item->url;
