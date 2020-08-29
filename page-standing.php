@@ -56,9 +56,9 @@
                                                 <span class="logo">
                                                     <img src="<?php the_field('imagem'); ?>" alt="">
                                                 </span>
-                                                <span class="text">
+                                               <a href="<?php the_permalink(); ?>"><span class="text">
                                                     <?php the_title(); ?>
-                                                </span>
+                                                </span></a>
                                             </span>
                                         </td>
                                         <td><?php the_field('ranked_points'); ?></td>
