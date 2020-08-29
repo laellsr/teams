@@ -16,7 +16,7 @@
 
 <div>
     <?php 
-    wp_page_menu();
+    wp_nav_menu(array('theme_location' => 'nav-menu', 'fallback_cb' => false));
 }
 
      ?>
