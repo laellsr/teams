@@ -3,7 +3,11 @@
     	<ul class="navbar-nav ml-auto">
 				<?php
 					//wp_nav_menu(array('theme_location' => 'nav-menu'));
+				/* Para ser mais rapido, preferi não utilizar esta função
+				pois a saida vem formatada e tentei utilizar argumentos
+				e outras funções e não deu certo, preciso averiguar melhor */
 				?>
+
             <li class="nav-item">
                 <a class="nav-link" href="http://laelteste-com.umbler.net/">Home</a>
             </li>
