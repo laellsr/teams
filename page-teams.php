@@ -33,7 +33,7 @@ get_header(); ?>
 <div class="standing text-center">
     <div class="row ml-5 mr-5">
 
-        <?php  query_posts('post_type=Teams&meta_key=ranked_points&orderby=meta_value&order=ASC&post_per_page=-1'); ?>
+        <?php  query_posts('post_type=Teams&order=ASC&post_per_page=-1'); ?>
               
         <?php if(have_posts()):
 
