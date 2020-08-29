@@ -16,7 +16,6 @@
                                 <p>Learn all about the USA Football Championship 2020!
                                     <br>See team placement and match results.</p>
                             </div>
-                            <a href="standing.php" class="about-btn">See Now</a>
                         </div>
                     </div>
                 </div>
