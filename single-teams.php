@@ -34,7 +34,7 @@ get_header(); ?>
                     <div class="col-3">
                         <span class="logo"><a target="_blank" href="<?php the_field('imagem'); ?>"><img class="" src="<?php the_field('imagem'); ?>" style="width:90%"></a></span>
                     </div>
-                    <div class="col-9">
+                    <div class="col-9" style="vertical-align: center;">
                         <h4 class="result-title"><?php the_title(); ?></h4>
                         <div class="mt-1 mb-2"><?php the_field('descricao'); ?> </div>
                         <dt class="d-inline">Ranked Points</dt>: <span class="diff"><?php the_field('ranked_points'); ?></span>
