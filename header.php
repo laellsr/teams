@@ -13,6 +13,19 @@
     </head>
 
 <body>
+
+<div>
+    <?php 
+$menu_items = wp_get_nav_menu_items( $options['menu_choice'] );
+foreach ( (array) $menu_items as $key => $menu_item ) {
+    $title = $menu_item->title;
+    $url = $menu_item->url;
+    echo $title . " " . $url;
+}
+
+     ?>
+</div>
+
         <!-- preloader begin -->
         <div class="preloader">
             <img src="<?php bloginfo('template_url'); ?>/assets/img/preloader.gif" alt="">
