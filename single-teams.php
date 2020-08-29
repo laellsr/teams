@@ -15,6 +15,9 @@ get_header(); ?>
                         <li>
                             Teams
                         </li>
+                        <li>
+                            <?php the_title(); ?>
+                        </li>
                     </ul>
                 </div>
             </div>
