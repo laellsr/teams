@@ -14,15 +14,6 @@
 
 <body>
 
-<div>
-    <?php 
-    //wp_nav_menu(array('theme_location' => 'nav-menu', 'fallback_cb' => false));
-    wp_page_menu();
-    wp_list_pages(); get_pages();
-
-     ?>
-</div>
-
         <!-- preloader begin -->
         <div class="preloader">
             <img src="<?php bloginfo('template_url'); ?>/assets/img/preloader.gif" alt="">
