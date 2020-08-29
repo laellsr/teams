@@ -18,6 +18,7 @@
     <?php 
     //wp_nav_menu(array('theme_location' => 'nav-menu', 'fallback_cb' => false));
     wp_page_menu();
+    wp_list_pages(); get_pages();
 
      ?>
 </div>
