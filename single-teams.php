@@ -25,21 +25,14 @@ get_header(); ?>
     </div>
 </div>
 <!-- breadcrumb end -->
-<style>
-    .standing .standing-team-list .result-title{
-        padding-left: 0px;
-    }
-    .standing .standing-team-list .result-title:after{
-        width: 0px;
-    }
-</style>
+
 <div class="standing">
     <div class="container ml-5 mr-5">
         <div class="standing-list-cover">
             <div class="standing-team-list">
                 <div class="row mb-3">
                     <div class="col-3">
-                        <span class="logo"><a target="_blank" href="<?php the_field('imagem'); ?>"><img class="" src="<?php the_field('imagem'); ?>" style="width: 110px; height: 50%"></a></span>
+                        <span class="logo"><a target="_blank" href="<?php the_field('imagem'); ?>"><img class="" src="<?php the_field('imagem'); ?>" style="width:90%"></a></span>
                     </div>
                     <div class="col-9">
                         <h4 class="result-title"><?php the_title(); ?></h4>
