@@ -3,7 +3,7 @@
 
                                 <?php  query_posts('post_type=Teams&meta_key=ranked_points&orderby=meta_value&order=DESC&post_per_page=-1'); $counter=1; ?>
                                       
-                                <?php if(have_posts()):
+                                <?php echo "eita doidera";; if(have_posts()):
 
                                     while(have_posts()): the_post(); ?>
                              
