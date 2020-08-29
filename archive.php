@@ -45,7 +45,7 @@ get_header(); ?>
                                     <span class="logo"><a target="_blank" href="<?php the_field('imagem'); ?>"><img class="" src="<?php the_field('imagem'); ?>" style="width: 110px; height: 50%"></a></span>
                                 </div>
                                 <div class="mt-4">
-                                    <h4 class="result-title"><?php the_title(); ?></h4>
+                                    <a href="<?php get_permalink(); ?>"><h4 class="result-title"><?php the_title(); ?></h4></a>
                                     <!--<div class="mt-1 mb-2"><?php // the_field('descricao'); ?> </div>-->
                                     <dt class="d-inline">Ranked Points</dt>: <span class="diff"><?php the_field('ranked_points'); ?></span>
                                 </div>
