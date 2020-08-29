@@ -37,13 +37,13 @@ get_header(); ?>
     <div class="container ml-5 mr-5">
         <div class="standing-list-cover">
             <div class="standing-team-list">
-                <div class="mb-3">
+                <div class="row mb-3">
                     <div class="col-3">
                         <span class="logo"><a target="_blank" href="<?php the_field('imagem'); ?>"><img class="" src="<?php the_field('imagem'); ?>" style="width: 110px; height: 50%"></a></span>
                     </div>
                     <div class="col-9">
                         <h4 class="result-title"><?php the_title(); ?></h4>
-                        <!--<div class="mt-1 mb-2"><?php // the_field('descricao'); ?> </div>-->
+                        <div class="mt-1 mb-2"><?php the_field('descricao'); ?> </div>
                         <dt class="d-inline">Ranked Points</dt>: <span class="diff"><?php the_field('ranked_points'); ?></span>
                     </div>
                 </div>
